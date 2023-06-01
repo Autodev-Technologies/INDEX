@@ -8,5 +8,10 @@ INDEX 5 will be release on late 2024
 
 Project inspired by Unity, Godot and Unreal Engine
 
+# Signs Of Versions
+* A = Alpha Phase
+* B = Beta Phase
+* F = Final Release Phase
+
 # INDEX 4.0.0a1 (2023.1.0a1):
 * Empty C++ Project
