@@ -1,4 +1,4 @@
-## Index 1.0
+## Index 1.x
 ![INDEXLogo](https://github.com/INDEV-Technologies/INDEX-1/assets/126918321/7a42ca68-94b4-408e-8eca-1d41fe880c06)
 
 INDEX 1.0 Development
