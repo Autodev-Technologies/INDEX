@@ -42,4 +42,3 @@ As a computer software for developers and this Project inspired by Unity, Godot 
 * Audio Engine : OpenAL
 * Math library : GLM
 * Input library : GLFW
-* Etc.
