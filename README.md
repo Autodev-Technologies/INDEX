@@ -10,7 +10,7 @@ INDEX 1.0 is an in-development game engine written in C++
 As a computer software for developers and this Project inspired by Unity, Godot and Unreal Engine
 
 ## Versions of INDEX:
-Warning : Starting with the INDEX 2.x version, the source code will be closed to the public and the source code might be rewritten to be different than INDEX 1.z later, after the arrival of the INDEX 1.x version, it is already available to be installed.
+Warning : Starting with the INDEX 2.x version, the source code will be closed to the public and the source code might be rewritten to be different than INDEX 1.x later, after the arrival of the INDEX 1.x version, it is already available to be installed.
 
 Guide
 * (LTS) : Long Term Support
