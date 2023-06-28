@@ -16,6 +16,7 @@ Guide
 * (LTS) : Long Term Support
 * .X : Version Of Index Standard
 
+Versions
 
 * INDEX 1.x will be release on Summer-Autumn 2023
   * INDEX 1.x LTS will be release on winter January 2024
