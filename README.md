@@ -10,17 +10,18 @@ Created by INDEV Corporation And INDEV Technologies ApS
 INDEX 1.0 is an in-development game engine written in C++
 As a computer software for developers and this Project inspired by Unity, Godot and Unreal Engine
 
+## Index 1.x Coming Soon
+Index 1.x will be release with the Program and the Source Code for Windows
+
 ## Versions of INDEX:
-Warning : Starting with the INDEX 2.x version, the source code will be closed to the public and the source code might be rewritten to be different than INDEX 1.x later, after the arrival of the INDEX 1.x version, it is already available to be installed.
+Warning : Starting with the INDEX 2.x version, due that the Program now will be property for INDEV Technologies ApS, the source code will be closed to the public and the source code might be rewritten to be different than INDEX 1.x later, after the arrival of the INDEX 1.x version, it is already available to be installed.
 
 Versions
-* (LTS) : Long Term Support
-* .X : Version Of Index Standard
 
 * INDEX 1.x will be release on Summer-Autumn 2023
   * INDEX 1.x LTS will be release on winter February 2024
 
-* INDEX 2.x will be release on winter December 2023
+* INDEX 2.x will be release on July December 2024
   * INDEX 2.x LTS has undefined date
  
 ## Signs Of Versions:
