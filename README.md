@@ -30,15 +30,7 @@
   <h4 align="center">F = Final Release Phase</h4>
 
 <h2 align="center">Features of INDEX 1.x</h3>
-  <h4 align="center">Vulkan graphics library</h4>
-  <h4 align="center">Programming language Lua</h4>
-  <h4 align="center">Physics Box2D & PhysX</h4>
-  <h4 align="center">Libraries Meshs : .obj, .fbx, glft, glsl & glb</h4>
-  <h4 align="center">Example Project : Islands Demo (inspired by Unity 2.x)</h4>
-  <h4 align="center">Light & Dark Theme</h4>
-  <h4 align="center">Scene & Project Format (Scene: .index | Project: .IndexProject)</h4>
-  <h4 align="center">Text Editor Lua (Basic)</h4>
-
+  <h4 align="center">Vulkan graphics library, Programming language Lua, Physics Box2D & PhysX, Libraries Meshs : .obj, .fbx, glft, glsl & glb,Example Project : Islands Demo (inspired by Unity 2.x), Light & Dark Theme, Scene & Project Format (Scene: .index | Project: .IndexProject), Text Editor Lua (Basic)</h4>
 <h2 align="center">Developers of INDEX</h3>
   <h4 align="center">INDEV Technologies ApS, INDEV Corporation & Saúl Alejandro</h4>
 
