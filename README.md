@@ -1,5 +1,5 @@
 <h1 align="center" style="border-bottom: none;">
-  <a href="https://github.com/jmorton06/Lumos/"><img src="https://github.com/INDEV-Technologies/INDEX-1.x/assets/126918321/f6fd2b15-fe0a-4396-8be3-76771dad7969"</a>
+  <a href="https://github.com/INDEV-Technologies/INDEX-1.x/"><img src="https://github.com/INDEV-Technologies/INDEX-1.x/assets/126918321/f6fd2b15-fe0a-4396-8be3-76771dad7969"</a>
 </h1>
 <h3 align="center">Cross-platform 2D and 3D Game Engine written in C++ that supports Vulkan.</h3>
    <h4 align="center">Created by INDEV Corporation, INDEV Technologies ApS & Saúl Alejandro</h4>
@@ -15,19 +15,13 @@
 <a href="https://github.com/jmorton06/Lumos/blob/master/LICENSE"><img alt="license" src="https://img.shields.io/github/license/jmorton06/Lumos?style=flat-square"/></a>
 <br/>
 <a href=""><img alt="size" src="https://img.shields.io/github/repo-size/INDEV-Technologies/INDEX-1.x?style=flat-square"/></a>
+
+<a href=""><img alt="size" src="https://github.com/INDEV-Technologies/INDEX-1.x/assets/126918321/418c4d2a-7b79-49fb-ad42-97686de6ce22"/></a>
  <h3 align="center">About</h3>
    <h4 align="center">INDEX 1.0 is an in-development game engine written in C++ As a computer software for developers and this Project inspired by Unity, Godot and Unreal Engine</h4>
-<h3 align="center">Versions of INDEX:</h3>
-  <h4 align="center">Warning : Starting with the INDEX 2.x version, due that the Program now will be property for INDEV Technologies ApS, the source code will be closed to the public and the source code might be rewritten to be different than INDEX 1.x later, after the arrival of the INDEX 1.x version, it is already available to be installed.</h4>
 
-<h3 align="center">Versions</h3>
-  <h4 align="center">* INDEX 1.x will be release on Summer-Autumn 2023</h4>
-     <h5 align="center">* INDEX 1.x LTS will be release on winter February 2024</h4>
-
-<h3 align="center">Signs Of Versions:</h3>
-  <h4 align="center">A = Alpha Phase</h4>
-  <h4 align="center">B = Beta Phase</h4>
-  <h4 align="center">F = Final Release Phase</h4>
+<h3 align="center">Current State:</h3>
+  <h4 align="center">Alpha Development</h4>
 
 <h2 align="center">Features of INDEX 1.x</h3>
   <h4 align="center">Vulkan graphics library, Programming language Lua, Physics Box2D & PhysX, Libraries Meshs : .obj, .fbx, glft, glsl & glb,Example Project : Islands Demo (inspired by Unity 2.x), Light & Dark Theme, Scene & Project Format (Scene: .index | Project: .IndexProject), Text Editor Lua (Basic)</h4>
