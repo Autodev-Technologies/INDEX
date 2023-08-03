@@ -1,35 +1,52 @@
-<h1 align="center" style="border-bottom: none;">
-  <a href="https://github.com/INDEV-Technologies/INDEX-1.x/"><img src="https://github.com/INDEV-Technologies/INDEX-1.x/assets/126918321/f6fd2b15-fe0a-4396-8be3-76771dad7969"</a>
-</h1>
-<h3 align="center">Cross-platform 2D and 3D Game Engine written in C++ that supports Vulkan.</h3>
-   <h4 align="center">Created by INDEV Corporation, INDEV Technologies ApS & Saúl Alejandro</h4>
-      <h4 align="center">Release date: 27.08.23</h4>
+# Index 1.x
+
 <p align="center">
-  <a href="#screenshots">Screenshots</a> |
-  <a href="#building-🔨">Building</a> |
-  <a href="#features">Features</a> |
-  <a href="#dependencies">Dependencies</a>
-<br/>
-<br/>
-<a href=""><img alt="platforms" src="https://img.shields.io/badge/Platforms-Windows%20%7C%20Linux%20%7C%20macOS%20%7C%20iOS-blue?style=flat-square"/></a>
-<a href="https://github.com/jmorton06/Lumos/blob/master/LICENSE"><img alt="license" src="https://img.shields.io/github/license/jmorton06/Lumos?style=flat-square"/></a>
-<br/>
-<a href=""><img alt="size" src="https://img.shields.io/github/repo-size/INDEV-Technologies/INDEX-1.x?style=flat-square"/></a>
+  <a href="">
+    <img src="https://github.com/INDEV-Technologies/INDEX-1.x/assets/126918321/f6fd2b15-fe0a-4396-8be3-76771dad7969" width="400" alt="Index 1.x logo">
+  </a>
+</p>
 
-<a href=""><img alt="size" src="https://github.com/INDEV-Technologies/INDEX-1.x/assets/126918321/418c4d2a-7b79-49fb-ad42-97686de6ce22"/></a>
- <h3 align="center">About</h3>
-   <h4 align="center">INDEX 1.0 is an in-development game engine written in C++ As a computer software for developers and this Project inspired by Unity, Godot and Unreal Engine</h4>
+## 2D and 3D cross-platform game engine
 
-<h3 align="center">Current State:</h3>
-  <h4 align="center">Alpha Development</h4>
+**[Index 1.x]() is a feature-packed, cross-platform
+game engine to create 2D and 3D games from a unified interface.** It provides a
+comprehensive set of common tools, so that users can focus on making games
+without having to reinvent the wheel. Games can be exported with one click to a
+number of platforms, including the major desktop platforms (Linux, macOS,
+Windows).
 
-<h2 align="center">Features of INDEX 1.x</h3>
-  <h4 align="center">Vulkan graphics library, Programming language Lua, Physics Box2D & PhysX, Libraries Meshs : .obj, .fbx, glft, glsl & glb,Example Project : Islands Demo (inspired by Unity 2.x), Light & Dark Theme, Scene & Project Format (Scene: .index | Project: .IndexProject), Text Editor Lua (Basic)</h4>
-<h2 align="center">Developers of INDEX</h3>
-  <h4 align="center">INDEV Technologies ApS, INDEV Corporation & Saúl Alejandro</h4>
+## Free, open source and community-driven
 
-<h2 align="center">Credits to all libraries that were used:</h3>
-  <h4 align="center">Khronos Group Inc, AMD, Omar Cornut, Cedric Guillemet, Michele Caini, Marcus Geelnard, Camilla Lowy ,Gabi Melman, Sean Barrett, Syoyo Fujita, Aurelien Chatelain, Arseny Kapoulkine, David Herberth, Erin Catto, Rapptz, ThePhD, Randolph Voorhies, Shane Grant</h4>
+INDEX is completely free and open source under the very permissive MIT license.
+No strings attached, no royalties, nothing. The users' games are theirs, down
+to the last line of engine code. Indev's development is fully independent and
+community-driven, empowering users to help shape their engine to match their
+expectations.
+
+Before being open sourced in June 2023, Index 1.x (Atlas One) had been developed by Saúl Alejandro and
+INDEV Technologies ApS (That will still maintaining the project) for several
+years as an in-house and entreprise engine, used to publish several work-for-hire titles.
+
+![Screenshot of a 3D scene in the INDEX editor](https://github.com/INDEV-Technologies/INDEX-1.x/assets/126918321/74cfc3f9-1d0e-4370-96df-be5c53a8608b)
+
+## Getting the engine
+
+### Release Date:
+
+INDEX 1.x will be release on 27.08.2023
+
+### Binary downloads
+
+Official binaries for the INDEX 1.x editor and the export templates can be found on Github.
+
+### Compiling from source
+
+See INDEV Offical docs on Github for compilation instructions for every supported platform.
+
+### Credits to all libraries that were used:
+
+Khronos Group Inc, AMD, Omar Cornut, Cedric Guillemet, Michele Caini, Marcus Geelnard, Camilla Lowy ,Gabi Melman, Sean Barrett, Syoyo Fujita, Aurelien Chatelain, Arseny Kapoulkine, David Herberth, Erin Catto, Rapptz, ThePhD, Randolph Voorhies, Shane Grant
+
 <h4 align="center">© 2022-2023 Indev Technologies ApS | © 2021-2023 Indev Corporation | © 2010-2023 Saúl Alejandro</h4>
 <br/>
 </p>
