@@ -27,7 +27,9 @@ Before being open sourced in June 2023, Index 1.x (Atlas One) had been developed
 INDEV Technologies ApS (That will still maintaining the project) for several
 years as an in-house and entreprise engine, used to publish several work-for-hire titles.
 
-![Screenshot of a 3D scene in the INDEX editor](https://github.com/INDEV-Technologies/INDEX-1.x/assets/126918321/74cfc3f9-1d0e-4370-96df-be5c53a8608b)
+Screenshot of the UI of Index 1.0.4b1
+
+![Screenshot of a 3D scene in the INDEX editor](https://github.com/INDEV-Technologies/INDEX-1.x/assets/126918321/43b92d95-8082-4f3f-a6be-65a1aa1eddbc)
 
 ## Getting the engine
 
