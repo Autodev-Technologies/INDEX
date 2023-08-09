@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="">
-    <img src="https://github.com/INDEV-Technologies/INDEX-1.x/assets/126918321/f6fd2b15-fe0a-4396-8be3-76771dad7969" width="400" alt="Index 1.x logo">
+    <img src="https://github.com/INDEV-Technologies/INDEX-1.x/assets/126918321/348fa80e-4a2f-49d4-842e-46997a52bc74" width="400" alt="Index 1.x logo">
   </a>
 </p>
 
