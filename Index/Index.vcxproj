@@ -1,0 +1,1326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Production|x64">
+      <Configuration>Production</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{354DA00D-A161-C8BE-6AE3-6B1ED6B6C4EF}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Index</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Index</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Production|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Production|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)\bin\Debug-windows-x86_64\Index\Editor\</OutDir>
+    <IntDir>..\bin-int\Debug-windows-x86_64\obj\Debug\Index\</IntDir>
+    <TargetName>IndexEngine</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <ExternalIncludePath>External\entt\src;External\glfw\include;External\glad\include;External\lua\src;External\stb;External\imgui;External\OpenAL\include;External\box2d\include;External\vulkan;.;External;External\spdlog\include;External\freetype\include;External\vulkan\SPIRV-Cross;External\cereal\include;External\glm;External\msdf-atlas-gen\msdfgen;External\msdf-atlas-gen\msdf-atlas-gen;External\ozz-animation\include;Source;$(ExternalIncludePath)</ExternalIncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\bin\Release-windows-x86_64\</OutDir>
+    <IntDir>..\bin-int\Release-windows-x86_64\obj\Release\Index\</IntDir>
+    <TargetName>IndexEngine</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <ExternalIncludePath>External\entt\src;External\glfw\include;External\glad\include;External\lua\src;External\stb;External\imgui;External\OpenAL\include;External\box2d\include;External\vulkan;.;External;External\spdlog\include;External\freetype\include;External\vulkan\SPIRV-Cross;External\cereal\include;External\glm;External\msdf-atlas-gen\msdfgen;External\msdf-atlas-gen\msdf-atlas-gen;External\ozz-animation\include;Source;$(ExternalIncludePath)</ExternalIncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Production|x64'">
+    <OutDir>..\bin\Production-windows-x86_64\</OutDir>
+    <IntDir>..\bin-int\Production-windows-x86_64\obj\Production\Index\</IntDir>
+    <TargetName>IndexEngine</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <ExternalIncludePath>External\entt\src;External\glfw\include;External\glad\include;External\lua\src;External\stb;External\imgui;External\OpenAL\include;External\box2d\include;External\vulkan;.;External;External\spdlog\include;External\freetype\include;External\vulkan\SPIRV-Cross;External\cereal\include;External\glm;External\msdf-atlas-gen\msdfgen;External\msdf-atlas-gen\msdf-atlas-gen;External\ozz-animation\include;Source;$(ExternalIncludePath)</ExternalIncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4307;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>INDEX_ENGINE;FREEIMAGE_LIB;IMGUI_USER_CONFIG="Source/Index/ImGui/ImConfig.h";SPDLOG_COMPILED_LIB;GLM_FORCE_INTRINSICS;GLM_FORCE_DEPTH_ZERO_TO_ONE;USE_VMA_ALLOCATOR;INDEX_PLATFORM_WINDOWS;INDEX_RENDER_API_OPENGL;INDEX_RENDER_API_VULKAN;VK_USE_PLATFORM_WIN32_KHR;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_DISABLE_EXTENDED_ALIGNED_STORAGE;_SILENCE_CXX17_OLD_ALLOCATOR_MEMBERS_DEPRECATION_WARNING;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;INDEX_IMGUI;INDEX_OPENAL;INDEX_VOLK;INDEX_USE_GLFW_WINDOWS;INDEX_DEBUG;_DEBUG;TRACY_ENABLE;INDEX_PROFILE;TRACY_ON_DEMAND;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..;Source;Source\Index;Assets\Shaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>Dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4307;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>INDEX_ENGINE;FREEIMAGE_LIB;IMGUI_USER_CONFIG="Source/Index/ImGui/ImConfig.h";SPDLOG_COMPILED_LIB;GLM_FORCE_INTRINSICS;GLM_FORCE_DEPTH_ZERO_TO_ONE;USE_VMA_ALLOCATOR;INDEX_PLATFORM_WINDOWS;INDEX_RENDER_API_OPENGL;INDEX_RENDER_API_VULKAN;VK_USE_PLATFORM_WIN32_KHR;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_DISABLE_EXTENDED_ALIGNED_STORAGE;_SILENCE_CXX17_OLD_ALLOCATOR_MEMBERS_DEPRECATION_WARNING;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;INDEX_IMGUI;INDEX_OPENAL;INDEX_VOLK;INDEX_USE_GLFW_WINDOWS;INDEX_RELEASE;NDEBUG;TRACY_ENABLE;INDEX_PROFILE;TRACY_ON_DEMAND;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..;Source;Source\Index;Assets\Shaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>Dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Production|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4307;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>INDEX_ENGINE;FREEIMAGE_LIB;IMGUI_USER_CONFIG="Source/Index/ImGui/ImConfig.h";SPDLOG_COMPILED_LIB;GLM_FORCE_INTRINSICS;GLM_FORCE_DEPTH_ZERO_TO_ONE;USE_VMA_ALLOCATOR;INDEX_PLATFORM_WINDOWS;INDEX_RENDER_API_OPENGL;INDEX_RENDER_API_VULKAN;VK_USE_PLATFORM_WIN32_KHR;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_DISABLE_EXTENDED_ALIGNED_STORAGE;_SILENCE_CXX17_OLD_ALLOCATOR_MEMBERS_DEPRECATION_WARNING;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;INDEX_IMGUI;INDEX_OPENAL;INDEX_VOLK;INDEX_USE_GLFW_WINDOWS;INDEX_PRODUCTION;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..;Source;Source\Index;Assets\Shaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>Dbghelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Index\AI\AINode.h" />
+    <ClInclude Include="Source\Index\AI\AStar.h" />
+    <ClInclude Include="Source\Index\AI\PathEdge.h" />
+    <ClInclude Include="Source\Index\AI\PathNode.h" />
+    <ClInclude Include="Source\Index\AI\PathNodePriorityQueue.h" />
+    <ClInclude Include="Source\Index\AI\QueueablePathNode.h" />
+    <ClInclude Include="Source\Index\Audio\AudioData.h" />
+    <ClInclude Include="Source\Index\Audio\AudioManager.h" />
+    <ClInclude Include="Source\Index\Audio\OggLoader.h" />
+    <ClInclude Include="Source\Index\Audio\Sound.h" />
+    <ClInclude Include="Source\Index\Audio\SoundNode.h" />
+    <ClInclude Include="Source\Index\Audio\WavLoader.h" />
+    <ClInclude Include="Source\Index\Core\Application.h" />
+    <ClInclude Include="Source\Index\Core\Asset.h" />
+    <ClInclude Include="Source\Index\Core\Buffer.h" />
+    <ClInclude Include="Source\Index\Core\CommandLine.h" />
+    <ClInclude Include="Source\Index\Core\Core.h" />
+    <ClInclude Include="Source\Index\Core\CoreSystem.h" />
+    <ClInclude Include="Source\Index\Core\DataStructures\Vector.h" />
+    <ClInclude Include="Source\Index\Core\Engine.h" />
+    <ClInclude Include="Source\Index\Core\EntryPoint.h" />
+    <ClInclude Include="Source\Index\Core\JobSystem.h" />
+    <ClInclude Include="Source\Index\Core\LMLog.h" />
+    <ClInclude Include="Source\Index\Core\OS\Allocators\Allocator.h" />
+    <ClInclude Include="Source\Index\Core\OS\Allocators\BinAllocator.h" />
+    <ClInclude Include="Source\Index\Core\OS\Allocators\DefaultAllocator.h" />
+    <ClInclude Include="Source\Index\Core\OS\Allocators\StbAllocator.h" />
+    <ClInclude Include="Source\Index\Core\OS\FileSystem.h" />
+    <ClInclude Include="Source\Index\Core\OS\Input.h" />
+    <ClInclude Include="Source\Index\Core\OS\KeyCodes.h" />
+    <ClInclude Include="Source\Index\Core\OS\Memory.h" />
+    <ClInclude Include="Source\Index\Core\OS\MemoryManager.h" />
+    <ClInclude Include="Source\Index\Core\OS\OS.h" />
+    <ClInclude Include="Source\Index\Core\OS\Window.h" />
+    <ClInclude Include="Source\Index\Core\Profiler.h" />
+    <ClInclude Include="Source\Index\Core\Reference.h" />
+    <ClInclude Include="Source\Index\Core\ReferenceCounter.h" />
+    <ClInclude Include="Source\Index\Core\StringUtilities.h" />
+    <ClInclude Include="Source\Index\Core\UUID.h" />
+    <ClInclude Include="Source\Index\Core\VFS.h" />
+    <ClInclude Include="Source\Index\Core\Version.h" />
+    <ClInclude Include="Source\Index\Embedded\EmbedAsset.h" />
+    <ClInclude Include="Source\Index\Events\ApplicationEvent.h" />
+    <ClInclude Include="Source\Index\Events\Event.h" />
+    <ClInclude Include="Source\Index\Events\KeyEvent.h" />
+    <ClInclude Include="Source\Index\Events\MouseEvent.h" />
+    <ClInclude Include="Source\Index\Graphics\AnimatedSprite.h" />
+    <ClInclude Include="Source\Index\Graphics\Animation\Animation.h" />
+    <ClInclude Include="Source\Index\Graphics\Animation\AnimationController.h" />
+    <ClInclude Include="Source\Index\Graphics\Animation\Skeleton.h" />
+    <ClInclude Include="Source\Index\Graphics\Camera\Camera.h" />
+    <ClInclude Include="Source\Index\Graphics\Camera\Camera2D.h" />
+    <ClInclude Include="Source\Index\Graphics\Camera\CameraController.h" />
+    <ClInclude Include="Source\Index\Graphics\Camera\EditorCamera.h" />
+    <ClInclude Include="Source\Index\Graphics\Camera\FPSCamera.h" />
+    <ClInclude Include="Source\Index\Graphics\Camera\ThirdPersonCamera.h" />
+    <ClInclude Include="Source\Index\Graphics\Environment.h" />
+    <ClInclude Include="Source\Index\Graphics\Font.h" />
+    <ClInclude Include="Source\Index\Graphics\GBuffer.h" />
+    <ClInclude Include="Source\Index\Graphics\Light.h" />
+    <ClInclude Include="Source\Index\Graphics\MSDFData.h" />
+    <ClInclude Include="Source\Index\Graphics\Material.h" />
+    <ClInclude Include="Source\Index\Graphics\Mesh.h" />
+    <ClInclude Include="Source\Index\Graphics\MeshFactory.h" />
+    <ClInclude Include="Source\Index\Graphics\Model.h" />
+    <ClInclude Include="Source\Index\Graphics\RHI\BufferLayout.h" />
+    <ClInclude Include="Source\Index\Graphics\RHI\CommandBuffer.h" />
+    <ClInclude Include="Source\Index\Graphics\RHI\Definitions.h" />
+    <ClInclude Include="Source\Index\Graphics\RHI\DescriptorSet.h" />
+    <ClInclude Include="Source\Index\Graphics\RHI\Framebuffer.h" />
+    <ClInclude Include="Source\Index\Graphics\RHI\GPUProfile.h" />
+    <ClInclude Include="Source\Index\Graphics\RHI\GraphicsContext.h" />
+    <ClInclude Include="Source\Index\Graphics\RHI\IMGUIRenderer.h" />
+    <ClInclude Include="Source\Index\Graphics\RHI\IndexBuffer.h" />
+    <ClInclude Include="Source\Index\Graphics\RHI\Pipeline.h" />
+    <ClInclude Include="Source\Index\Graphics\RHI\RenderDevice.h" />
+    <ClInclude Include="Source\Index\Graphics\RHI\RenderDoc.h" />
+    <ClInclude Include="Source\Index\Graphics\RHI\RenderPass.h" />
+    <ClInclude Include="Source\Index\Graphics\RHI\Renderer.h" />
+    <ClInclude Include="Source\Index\Graphics\RHI\Shader.h" />
+    <ClInclude Include="Source\Index\Graphics\RHI\SwapChain.h" />
+    <ClInclude Include="Source\Index\Graphics\RHI\Texture.h" />
+    <ClInclude Include="Source\Index\Graphics\RHI\UniformBuffer.h" />
+    <ClInclude Include="Source\Index\Graphics\RHI\VertexBuffer.h" />
+    <ClInclude Include="Source\Index\Graphics\Renderable2D.h" />
+    <ClInclude Include="Source\Index\Graphics\Renderers\DebugRenderer.h" />
+    <ClInclude Include="Source\Index\Graphics\Renderers\GridRenderer.h" />
+    <ClInclude Include="Source\Index\Graphics\Renderers\IRenderer.h" />
+    <ClInclude Include="Source\Index\Graphics\Renderers\RenderCommand.h" />
+    <ClInclude Include="Source\Index\Graphics\Renderers\RenderPasses.h" />
+    <ClInclude Include="Source\Index\Graphics\Sprite.h" />
+    <ClInclude Include="Source\Index\Graphics\Terrain.h" />
+    <ClInclude Include="Source\Index\ImGui\IconsMaterialDesignIcons.h" />
+    <ClInclude Include="Source\Index\ImGui\ImConfig.h" />
+    <ClInclude Include="Source\Index\ImGui\ImGuiManager.h" />
+    <ClInclude Include="Source\Index\ImGui\ImGuiUtilities.h" />
+    <ClInclude Include="Source\Index\Maths\BoundingBox.h" />
+    <ClInclude Include="Source\Index\Maths\BoundingSphere.h" />
+    <ClInclude Include="Source\Index\Maths\Frustum.h" />
+    <ClInclude Include="Source\Index\Maths\Maths.h" />
+    <ClInclude Include="Source\Index\Maths\MathsUtilities.h" />
+    <ClInclude Include="Source\Index\Maths\Plane.h" />
+    <ClInclude Include="Source\Index\Maths\Random.h" />
+    <ClInclude Include="Source\Index\Maths\Ray.h" />
+    <ClInclude Include="Source\Index\Maths\Rect.h" />
+    <ClInclude Include="Source\Index\Maths\Transform.h" />
+    <ClInclude Include="Source\Index\Physics\B2PhysicsEngine\B2DebugDraw.h" />
+    <ClInclude Include="Source\Index\Physics\B2PhysicsEngine\B2PhysicsEngine.h" />
+    <ClInclude Include="Source\Index\Physics\B2PhysicsEngine\RigidBody2D.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Broadphase\Broadphase.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Broadphase\BruteForceBroadphase.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Broadphase\OctreeBroadphase.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Broadphase\SortAndSweepBroadphase.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\CapsuleCollisionShape.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\CollisionShape.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\CuboidCollisionShape.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\Hull.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\HullCollisionShape.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\PyramidCollisionShape.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\SphereCollisionShape.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Constraints\AxisConstraint.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Constraints\Constraint.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Constraints\DistanceConstraint.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Constraints\SpringConstraint.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Constraints\WeldConstraint.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Integration.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\IndexPhysicsEngine.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Narrowphase\CollisionDetection.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Narrowphase\Manifold.h" />
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\RigidBody3D.h" />
+    <ClInclude Include="Source\Index\Platform\GLFW\GLFWKeyCodes.h" />
+    <ClInclude Include="Source\Index\Platform\GLFW\GLFWWindow.h" />
+    <ClInclude Include="Source\Index\Platform\OpenAL\ALManager.h" />
+    <ClInclude Include="Source\Index\Platform\OpenAL\ALSound.h" />
+    <ClInclude Include="Source\Index\Platform\OpenAL\ALSoundNode.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GL.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLCommandBuffer.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLContext.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLDebug.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLDescriptorSet.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLFramebuffer.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLFunctions.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLIMGUIRenderer.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLIndexBuffer.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLPipeline.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLRenderDevice.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLRenderPass.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLRenderer.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLShader.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLSwapChain.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLTexture.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLTypes.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLUniformBuffer.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLUtilities.h" />
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLVertexBuffer.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VK.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKBuffer.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKCommandBuffer.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKCommandPool.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKContext.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKDescriptorSet.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKDevice.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKFence.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKFramebuffer.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKFunctions.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKIMGUIRenderer.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKIndexBuffer.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKInitialisers.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKPipeline.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKRenderDevice.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKRenderPass.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKRenderer.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKShader.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKSwapChain.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKTexture.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKUniformBuffer.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKUtilities.h" />
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKVertexBuffer.h" />
+    <ClInclude Include="Source\Index\Platform\Windows\WindowsKeycodes.h" />
+    <ClInclude Include="Source\Index\Platform\Windows\WindowsOS.h" />
+    <ClInclude Include="Source\Index\Platform\Windows\WindowsPower.h" />
+    <ClInclude Include="Source\Index\Platform\Windows\WindowsUtilities.h" />
+    <ClInclude Include="Source\Index\Platform\Windows\WindowsWindow.h" />
+    <ClInclude Include="Source\Index\Scene\Component\AIComponent.h" />
+    <ClInclude Include="Source\Index\Scene\Component\Components.h" />
+    <ClInclude Include="Source\Index\Scene\Component\ModelComponent.h" />
+    <ClInclude Include="Source\Index\Scene\Component\RigidBody2DComponent.h" />
+    <ClInclude Include="Source\Index\Scene\Component\RigidBody3DComponent.h" />
+    <ClInclude Include="Source\Index\Scene\Component\SoundComponent.h" />
+    <ClInclude Include="Source\Index\Scene\Component\TextureMatrixComponent.h" />
+    <ClInclude Include="Source\Index\Scene\Entity.h" />
+    <ClInclude Include="Source\Index\Scene\EntityFactory.h" />
+    <ClInclude Include="Source\Index\Scene\EntityManager.h" />
+    <ClInclude Include="Source\Index\Scene\ISystem.h" />
+    <ClInclude Include="Source\Index\Scene\Scene.h" />
+    <ClInclude Include="Source\Index\Scene\SceneGraph.h" />
+    <ClInclude Include="Source\Index\Scene\SceneManager.h" />
+    <ClInclude Include="Source\Index\Scene\Serialisation.h" />
+    <ClInclude Include="Source\Index\Scene\SystemManager.h" />
+    <ClInclude Include="Source\Index\Scripting\Lua\ImGuiLua.h" />
+    <ClInclude Include="Source\Index\Scripting\Lua\LuaManager.h" />
+    <ClInclude Include="Source\Index\Scripting\Lua\LuaScriptComponent.h" />
+    <ClInclude Include="Source\Index\Scripting\Lua\MathsLua.h" />
+    <ClInclude Include="Source\Index\Scripting\Lua\PhysicsLua.h" />
+    <ClInclude Include="Source\Index\Utilities\AssetManager.h" />
+    <ClInclude Include="Source\Index\Utilities\CombineHash.h" />
+    <ClInclude Include="Source\Index\Utilities\IniFile.h" />
+    <ClInclude Include="Source\Index\Utilities\LoadImage.h" />
+    <ClInclude Include="Source\Index\Utilities\TSingleton.h" />
+    <ClInclude Include="Source\Index\Utilities\TimeStep.h" />
+    <ClInclude Include="Source\Index\Utilities\Timer.h" />
+    <ClInclude Include="Source\IndexEngine.h" />
+    <ClInclude Include="Source\Precompiled.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="External\glad\src\glad_wgl.c">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\Index\AI\AStar.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\AI\PathEdge.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\AI\PathNode.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Audio\AudioManager.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Audio\OggLoader.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Audio\Sound.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Audio\SoundNode.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Audio\WavLoader.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\Application.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\CommandLine.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\CoreSystem.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\Engine.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\JobSystem.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\LMLog.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\OS\Allocators\BinAllocator.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\OS\Allocators\DefaultAllocator.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\OS\Allocators\StbAllocator.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\OS\FileSystem.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\OS\Input.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\OS\Memory.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\OS\MemoryManager.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\OS\OS.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\OS\Window.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\Reference.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\StringUtilities.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\UUID.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\VFS.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Embedded\EmbedAsset.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\AnimatedSprite.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Animation\Animation.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Animation\AnimationController.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Animation\Skeleton.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Camera\Camera.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Camera\Camera2D.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Camera\EditorCamera.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Camera\FPSCamera.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Camera\ThirdPersonCamera.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Environment.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Font.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\GBuffer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Light.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Material.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Mesh.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\MeshFactory.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Model.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\ModelLoader\FBXLoader.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\ModelLoader\GLTFLoader.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\ModelLoader\OBJLoader.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\BufferLayout.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\CommandBuffer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\DescriptorSet.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\Framebuffer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\GraphicsContext.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\IMGUIRenderer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\IndexBuffer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\Pipeline.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\RenderDevice.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\RenderDoc.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\RenderPass.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\Renderer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\Shader.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\SwapChain.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\Texture.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\UniformBuffer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\VertexBuffer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Renderable2D.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Renderers\DebugRenderer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Renderers\GridRenderer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Renderers\IRenderer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Renderers\RenderPasses.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Sprite.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Terrain.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\ImGui\ImGuiManager.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\ImGui\ImGuiUtilities.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\BoundingBox.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\BoundingSphere.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\Frustum.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\Maths.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\MathsUtilities.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\Plane.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\Random.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\Ray.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\Rect.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\Transform.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\B2PhysicsEngine\B2DebugDraw.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\B2PhysicsEngine\B2PhysicsEngine.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\B2PhysicsEngine\RigidBody2D.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Broadphase\BruteForceBroadphase.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Broadphase\OctreeBroadphase.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Broadphase\SortAndSweepBroadphase.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\CapsuleCollisionShape.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\CuboidCollisionShape.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\Hull.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\HullCollisionShape.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\PyramidCollisionShape.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\SphereCollisionShape.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Constraints\AxisConstraint.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Constraints\DistanceConstraint.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Constraints\SpringConstraint.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Constraints\WeldConstraint.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Integration.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\IndexPhysicsEngine.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Narrowphase\CollisionDetection.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Narrowphase\Manifold.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\RigidBody3D.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\GLFW\GLFWWindow.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenAL\ALManager.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenAL\ALSound.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenAL\ALSoundNode.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLCommandBuffer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLContext.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLDebug.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLDescriptorSet.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLFramebuffer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLFunctions.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLIMGUIRenderer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLIndexBuffer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLPipeline.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLRenderDevice.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLRenderPass.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLRenderer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLShader.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLSwapChain.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLTexture.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLUniformBuffer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLUtilities.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLVertexBuffer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VK.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKBuffer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKCommandBuffer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKCommandPool.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKContext.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKDescriptorSet.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKDevice.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKFence.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKFramebuffer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKFunctions.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKIMGUIRenderer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKIndexBuffer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKPipeline.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKRenderDevice.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKRenderPass.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKRenderer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKShader.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKSwapChain.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKTexture.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKUniformBuffer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKUtilities.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKVertexBuffer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Windows\WindowsFileSystem.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Windows\WindowsOS.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Windows\WindowsPower.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Windows\WindowsTimer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Windows\WindowsUtilities.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Windows\WindowsVulkan.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Windows\WindowsWindow.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\Component\AIComponent.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\Component\ModelComponent.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\Component\RigidBody2DComponent.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\Component\RigidBody3DComponent.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\Component\SoundComponent.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\Component\TextureMatrixComponent.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\EntityFactory.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\EntityManager.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\Scene.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\SceneGraph.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\SceneManager.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scripting\Lua\ImGuiLua.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scripting\Lua\LuaManager.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scripting\Lua\LuaScriptComponent.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scripting\Lua\MathsLua.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scripting\Lua\PhysicsLua.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Utilities\AssetManager.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Utilities\ExternalBuild.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Utilities\IniFile.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Utilities\LoadImage.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Utilities\TimeStep.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Utilities\Timer.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <ClCompile Include="Source\Precompiled.cpp">
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="External\lua\lua.vcxproj">
+      <Project>{C78D880B-3397-887C-BC12-9F7C281B947C}</Project>
+    </ProjectReference>
+    <ProjectReference Include="External\box2d.vcxproj">
+      <Project>{E4442B0F-5059-53C0-19DB-F61F85AE4FF1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="External\imgui.vcxproj">
+      <Project>{0098A80F-6CAC-D0C0-352E-7420A101CDF1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="External\freetype\freetype.vcxproj">
+      <Project>{89895BD8-7556-B6E3-9E6F-A48B8A9BEB71}</Project>
+    </ProjectReference>
+    <ProjectReference Include="External\SpirvCross.vcxproj">
+      <Project>{434A39C2-2F02-7B0F-9809-546B84E01500}</Project>
+    </ProjectReference>
+    <ProjectReference Include="External\spdlog\spdlog.vcxproj">
+      <Project>{8EAD431C-7A4F-6EF2-630A-82464F4BF542}</Project>
+    </ProjectReference>
+    <ProjectReference Include="External\ModelLoaders\meshoptimizer\meshoptimizer.vcxproj">
+      <Project>{75046AD2-E1C4-E508-AAFF-2E86167F2AE5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="External\msdf-atlas-gen\msdf-atlas-gen.vcxproj">
+      <Project>{38BD587B-248B-4C81-0D1F-BDA7F98B28E6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="External\ozz-animation\ozz_base.vcxproj">
+      <Project>{226903BF-0E36-5ECA-374F-4C72237B9358}</Project>
+    </ProjectReference>
+    <ProjectReference Include="External\ozz-animation\ozz_animation.vcxproj">
+      <Project>{8764B778-F324-33AF-BC5F-7C2C28DF778B}</Project>
+    </ProjectReference>
+    <ProjectReference Include="External\ozz-animation\ozz_animation_offline.vcxproj">
+      <Project>{694CCA4B-D5B8-8546-9EAC-1DA40AD8A7AE}</Project>
+    </ProjectReference>
+    <ProjectReference Include="External\glfw.vcxproj">
+      <Project>{9563977C-819A-980D-2A87-7E10169D140F}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

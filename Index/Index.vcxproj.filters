@@ -1,0 +1,1305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="External">
+      <UniqueIdentifier>{089DB854-F469-1360-1D83-010809AF48EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\glad">
+      <UniqueIdentifier>{0FD5D857-7B95-548E-44D0-9D0BB04F996A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\glad\src">
+      <UniqueIdentifier>{A6826693-1299-6429-5B10-F04AC76535B1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{56EB95D1-428D-C0A7-2B48-D4FB178947F8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index">
+      <UniqueIdentifier>{75566EF2-61B9-FD96-0A3F-364DF680C919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\AI">
+      <UniqueIdentifier>{EE8E1733-5A1A-85F7-632B-08ECCF35E1F7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Audio">
+      <UniqueIdentifier>{3628313E-220C-F293-8B6C-ECE6776FDC15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Core">
+      <UniqueIdentifier>{EDCB3857-59E2-36ED-A259-C20E0EAF0775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Core\DataStructures">
+      <UniqueIdentifier>{FA46EE1D-E697-D95F-0FFC-C721FBAB6CC9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Core\OS">
+      <UniqueIdentifier>{3EB30B1C-2A42-95E5-D360-A9E0BFCEA58B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Core\OS\Allocators">
+      <UniqueIdentifier>{41E6EB45-ADC9-FA85-B6CC-28C2222FC1D6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Embedded">
+      <UniqueIdentifier>{4E2DDCB6-BA99-97B1-838D-2F0FEFB8B919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Events">
+      <UniqueIdentifier>{B98CBD0D-25EE-9A1B-AE5B-E1CD1ABCD1DA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Graphics">
+      <UniqueIdentifier>{5532B70E-C19E-7209-8A92-0A67F6BD9471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Graphics\Animation">
+      <UniqueIdentifier>{84997AF0-F07C-8930-F97F-B76C65E24F81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Graphics\Camera">
+      <UniqueIdentifier>{2D359A8D-19F0-8939-C2A7-0284AE41D4C9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Graphics\ModelLoader">
+      <UniqueIdentifier>{6C4A4487-D8B8-9906-21A2-54068D4F8FA2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Graphics\RHI">
+      <UniqueIdentifier>{07811D21-7343-51AB-BCF3-DF3728F52989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Graphics\Renderers">
+      <UniqueIdentifier>{6E9999CA-DA7C-A80A-E37F-D6464FE26E5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\ImGui">
+      <UniqueIdentifier>{5F0FBD3E-4BF3-7D94-B453-78E7A0566816}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Maths">
+      <UniqueIdentifier>{A19AFF3E-8D7E-C094-F6DE-BAE7E2E1AA16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Physics">
+      <UniqueIdentifier>{E7FEF3F4-D38D-7DBE-7CAC-91B9681A8E64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Physics\B2PhysicsEngine">
+      <UniqueIdentifier>{E3ED8100-CFD4-43F8-7825-AA1564EBBC5E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Physics\IndexPhysicsEngine">
+      <UniqueIdentifier>{FF63245E-6BF3-E548-74EF-C660E0FD2055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Physics\IndexPhysicsEngine\Broadphase">
+      <UniqueIdentifier>{C7271992-B3BB-0E3A-1C80-68EE0833492C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes">
+      <UniqueIdentifier>{9E1AB114-0A02-9C0A-13F0-9D867F563FCD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Physics\IndexPhysicsEngine\Constraints">
+      <UniqueIdentifier>{466B734A-B27C-1BF1-3BCE-AD30A7DEA42A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Physics\IndexPhysicsEngine\Narrowphase">
+      <UniqueIdentifier>{787B603E-E48C-08E5-6DDE-9A24D9EE911E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Platform">
+      <UniqueIdentifier>{69A6718F-D512-2D8A-9E06-C5E70A324FF2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Platform\GLFW">
+      <UniqueIdentifier>{48CBD10E-34DB-7DDF-9D94-E2FD89C36C78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Platform\OpenAL">
+      <UniqueIdentifier>{B7DEB71F-A399-A7CB-4C51-201638EBF15B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Platform\OpenGL">
+      <UniqueIdentifier>{7DDFB71F-699A-A7CB-1252-2016FEEBF15B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Platform\Vulkan">
+      <UniqueIdentifier>{C9436A30-B5FE-59DC-5EB6-D2264A50A46C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Platform\Windows">
+      <UniqueIdentifier>{A3A9CF6E-0FC2-B698-D86E-463244464B32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Scene">
+      <UniqueIdentifier>{52076D3F-3EEB-2D95-A74B-28E8934E1817}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Scene\Component">
+      <UniqueIdentifier>{34AE45EB-2069-3597-C920-AEE1B5BA7F27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Scripting">
+      <UniqueIdentifier>{B7217890-A31B-A1E2-8C88-37F37821074F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Scripting\Lua">
+      <UniqueIdentifier>{C83DAB6E-B44D-573F-1D07-BC5D093646D8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Index\Utilities">
+      <UniqueIdentifier>{20D1847B-0CCB-ADCD-F537-44DEE1D0133A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Index\AI\AINode.h">
+      <Filter>Source\Index\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\AI\AStar.h">
+      <Filter>Source\Index\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\AI\PathEdge.h">
+      <Filter>Source\Index\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\AI\PathNode.h">
+      <Filter>Source\Index\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\AI\PathNodePriorityQueue.h">
+      <Filter>Source\Index\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\AI\QueueablePathNode.h">
+      <Filter>Source\Index\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Audio\AudioData.h">
+      <Filter>Source\Index\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Audio\AudioManager.h">
+      <Filter>Source\Index\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Audio\OggLoader.h">
+      <Filter>Source\Index\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Audio\Sound.h">
+      <Filter>Source\Index\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Audio\SoundNode.h">
+      <Filter>Source\Index\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Audio\WavLoader.h">
+      <Filter>Source\Index\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\Application.h">
+      <Filter>Source\Index\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\Asset.h">
+      <Filter>Source\Index\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\Buffer.h">
+      <Filter>Source\Index\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\CommandLine.h">
+      <Filter>Source\Index\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\Core.h">
+      <Filter>Source\Index\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\CoreSystem.h">
+      <Filter>Source\Index\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\DataStructures\Vector.h">
+      <Filter>Source\Index\Core\DataStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\Engine.h">
+      <Filter>Source\Index\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\EntryPoint.h">
+      <Filter>Source\Index\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\JobSystem.h">
+      <Filter>Source\Index\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\LMLog.h">
+      <Filter>Source\Index\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\OS\Allocators\Allocator.h">
+      <Filter>Source\Index\Core\OS\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\OS\Allocators\BinAllocator.h">
+      <Filter>Source\Index\Core\OS\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\OS\Allocators\DefaultAllocator.h">
+      <Filter>Source\Index\Core\OS\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\OS\Allocators\StbAllocator.h">
+      <Filter>Source\Index\Core\OS\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\OS\FileSystem.h">
+      <Filter>Source\Index\Core\OS</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\OS\Input.h">
+      <Filter>Source\Index\Core\OS</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\OS\KeyCodes.h">
+      <Filter>Source\Index\Core\OS</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\OS\Memory.h">
+      <Filter>Source\Index\Core\OS</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\OS\MemoryManager.h">
+      <Filter>Source\Index\Core\OS</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\OS\OS.h">
+      <Filter>Source\Index\Core\OS</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\OS\Window.h">
+      <Filter>Source\Index\Core\OS</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\Profiler.h">
+      <Filter>Source\Index\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\Reference.h">
+      <Filter>Source\Index\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\ReferenceCounter.h">
+      <Filter>Source\Index\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\StringUtilities.h">
+      <Filter>Source\Index\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\UUID.h">
+      <Filter>Source\Index\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\VFS.h">
+      <Filter>Source\Index\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Core\Version.h">
+      <Filter>Source\Index\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Embedded\EmbedAsset.h">
+      <Filter>Source\Index\Embedded</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Events\ApplicationEvent.h">
+      <Filter>Source\Index\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Events\Event.h">
+      <Filter>Source\Index\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Events\KeyEvent.h">
+      <Filter>Source\Index\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Events\MouseEvent.h">
+      <Filter>Source\Index\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\AnimatedSprite.h">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Animation\Animation.h">
+      <Filter>Source\Index\Graphics\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Animation\AnimationController.h">
+      <Filter>Source\Index\Graphics\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Animation\Skeleton.h">
+      <Filter>Source\Index\Graphics\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Camera\Camera.h">
+      <Filter>Source\Index\Graphics\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Camera\Camera2D.h">
+      <Filter>Source\Index\Graphics\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Camera\CameraController.h">
+      <Filter>Source\Index\Graphics\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Camera\EditorCamera.h">
+      <Filter>Source\Index\Graphics\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Camera\FPSCamera.h">
+      <Filter>Source\Index\Graphics\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Camera\ThirdPersonCamera.h">
+      <Filter>Source\Index\Graphics\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Environment.h">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Font.h">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\GBuffer.h">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Light.h">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\MSDFData.h">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Material.h">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Mesh.h">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\MeshFactory.h">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Model.h">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\RHI\BufferLayout.h">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\RHI\CommandBuffer.h">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\RHI\Definitions.h">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\RHI\DescriptorSet.h">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\RHI\Framebuffer.h">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\RHI\GPUProfile.h">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\RHI\GraphicsContext.h">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\RHI\IMGUIRenderer.h">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\RHI\IndexBuffer.h">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\RHI\Pipeline.h">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\RHI\RenderDevice.h">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\RHI\RenderDoc.h">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\RHI\RenderPass.h">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\RHI\Renderer.h">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\RHI\Shader.h">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\RHI\SwapChain.h">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\RHI\Texture.h">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\RHI\UniformBuffer.h">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\RHI\VertexBuffer.h">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Renderable2D.h">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Renderers\DebugRenderer.h">
+      <Filter>Source\Index\Graphics\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Renderers\GridRenderer.h">
+      <Filter>Source\Index\Graphics\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Renderers\IRenderer.h">
+      <Filter>Source\Index\Graphics\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Renderers\RenderCommand.h">
+      <Filter>Source\Index\Graphics\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Renderers\RenderPasses.h">
+      <Filter>Source\Index\Graphics\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Sprite.h">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Graphics\Terrain.h">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\ImGui\IconsMaterialDesignIcons.h">
+      <Filter>Source\Index\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\ImGui\ImConfig.h">
+      <Filter>Source\Index\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\ImGui\ImGuiManager.h">
+      <Filter>Source\Index\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\ImGui\ImGuiUtilities.h">
+      <Filter>Source\Index\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Maths\BoundingBox.h">
+      <Filter>Source\Index\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Maths\BoundingSphere.h">
+      <Filter>Source\Index\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Maths\Frustum.h">
+      <Filter>Source\Index\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Maths\Maths.h">
+      <Filter>Source\Index\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Maths\MathsUtilities.h">
+      <Filter>Source\Index\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Maths\Plane.h">
+      <Filter>Source\Index\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Maths\Random.h">
+      <Filter>Source\Index\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Maths\Ray.h">
+      <Filter>Source\Index\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Maths\Rect.h">
+      <Filter>Source\Index\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Maths\Transform.h">
+      <Filter>Source\Index\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\B2PhysicsEngine\B2DebugDraw.h">
+      <Filter>Source\Index\Physics\B2PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\B2PhysicsEngine\B2PhysicsEngine.h">
+      <Filter>Source\Index\Physics\B2PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\B2PhysicsEngine\RigidBody2D.h">
+      <Filter>Source\Index\Physics\B2PhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Broadphase\Broadphase.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Broadphase</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Broadphase\BruteForceBroadphase.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Broadphase</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Broadphase\OctreeBroadphase.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Broadphase</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Broadphase\SortAndSweepBroadphase.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Broadphase</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\CapsuleCollisionShape.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\CollisionShapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\CollisionShape.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\CollisionShapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\CuboidCollisionShape.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\CollisionShapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\Hull.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\CollisionShapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\HullCollisionShape.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\CollisionShapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\PyramidCollisionShape.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\CollisionShapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\SphereCollisionShape.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\CollisionShapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Constraints\AxisConstraint.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Constraints</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Constraints\Constraint.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Constraints</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Constraints\DistanceConstraint.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Constraints</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Constraints\SpringConstraint.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Constraints</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Constraints\WeldConstraint.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Constraints</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Integration.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\IndexPhysicsEngine.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Narrowphase\CollisionDetection.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Narrowphase</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\Narrowphase\Manifold.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Narrowphase</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Physics\IndexPhysicsEngine\RigidBody3D.h">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\GLFW\GLFWKeyCodes.h">
+      <Filter>Source\Index\Platform\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\GLFW\GLFWWindow.h">
+      <Filter>Source\Index\Platform\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenAL\ALManager.h">
+      <Filter>Source\Index\Platform\OpenAL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenAL\ALSound.h">
+      <Filter>Source\Index\Platform\OpenAL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenAL\ALSoundNode.h">
+      <Filter>Source\Index\Platform\OpenAL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GL.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLCommandBuffer.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLContext.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLDebug.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLDescriptorSet.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLFramebuffer.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLFunctions.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLIMGUIRenderer.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLIndexBuffer.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLPipeline.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLRenderDevice.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLRenderPass.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLRenderer.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLShader.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLSwapChain.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLTexture.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLTypes.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLUniformBuffer.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLUtilities.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\OpenGL\GLVertexBuffer.h">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VK.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKBuffer.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKCommandBuffer.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKCommandPool.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKContext.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKDescriptorSet.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKDevice.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKFence.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKFramebuffer.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKFunctions.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKIMGUIRenderer.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKIndexBuffer.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKInitialisers.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKPipeline.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKRenderDevice.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKRenderPass.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKRenderer.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKShader.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKSwapChain.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKTexture.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKUniformBuffer.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKUtilities.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Vulkan\VKVertexBuffer.h">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Windows\WindowsKeycodes.h">
+      <Filter>Source\Index\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Windows\WindowsOS.h">
+      <Filter>Source\Index\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Windows\WindowsPower.h">
+      <Filter>Source\Index\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Windows\WindowsUtilities.h">
+      <Filter>Source\Index\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Platform\Windows\WindowsWindow.h">
+      <Filter>Source\Index\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scene\Component\AIComponent.h">
+      <Filter>Source\Index\Scene\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scene\Component\Components.h">
+      <Filter>Source\Index\Scene\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scene\Component\ModelComponent.h">
+      <Filter>Source\Index\Scene\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scene\Component\RigidBody2DComponent.h">
+      <Filter>Source\Index\Scene\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scene\Component\RigidBody3DComponent.h">
+      <Filter>Source\Index\Scene\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scene\Component\SoundComponent.h">
+      <Filter>Source\Index\Scene\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scene\Component\TextureMatrixComponent.h">
+      <Filter>Source\Index\Scene\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scene\Entity.h">
+      <Filter>Source\Index\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scene\EntityFactory.h">
+      <Filter>Source\Index\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scene\EntityManager.h">
+      <Filter>Source\Index\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scene\ISystem.h">
+      <Filter>Source\Index\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scene\Scene.h">
+      <Filter>Source\Index\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scene\SceneGraph.h">
+      <Filter>Source\Index\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scene\SceneManager.h">
+      <Filter>Source\Index\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scene\Serialisation.h">
+      <Filter>Source\Index\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scene\SystemManager.h">
+      <Filter>Source\Index\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scripting\Lua\ImGuiLua.h">
+      <Filter>Source\Index\Scripting\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scripting\Lua\LuaManager.h">
+      <Filter>Source\Index\Scripting\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scripting\Lua\LuaScriptComponent.h">
+      <Filter>Source\Index\Scripting\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scripting\Lua\MathsLua.h">
+      <Filter>Source\Index\Scripting\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Scripting\Lua\PhysicsLua.h">
+      <Filter>Source\Index\Scripting\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Utilities\AssetManager.h">
+      <Filter>Source\Index\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Utilities\CombineHash.h">
+      <Filter>Source\Index\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Utilities\IniFile.h">
+      <Filter>Source\Index\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Utilities\LoadImage.h">
+      <Filter>Source\Index\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Utilities\TSingleton.h">
+      <Filter>Source\Index\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Utilities\TimeStep.h">
+      <Filter>Source\Index\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Index\Utilities\Timer.h">
+      <Filter>Source\Index\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\IndexEngine.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Precompiled.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="External\glad\src\glad_wgl.c">
+      <Filter>External\glad\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\AI\AStar.cpp">
+      <Filter>Source\Index\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\AI\PathEdge.cpp">
+      <Filter>Source\Index\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\AI\PathNode.cpp">
+      <Filter>Source\Index\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Audio\AudioManager.cpp">
+      <Filter>Source\Index\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Audio\OggLoader.cpp">
+      <Filter>Source\Index\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Audio\Sound.cpp">
+      <Filter>Source\Index\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Audio\SoundNode.cpp">
+      <Filter>Source\Index\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Audio\WavLoader.cpp">
+      <Filter>Source\Index\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\Application.cpp">
+      <Filter>Source\Index\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\CommandLine.cpp">
+      <Filter>Source\Index\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\CoreSystem.cpp">
+      <Filter>Source\Index\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\Engine.cpp">
+      <Filter>Source\Index\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\JobSystem.cpp">
+      <Filter>Source\Index\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\LMLog.cpp">
+      <Filter>Source\Index\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\OS\Allocators\BinAllocator.cpp">
+      <Filter>Source\Index\Core\OS\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\OS\Allocators\DefaultAllocator.cpp">
+      <Filter>Source\Index\Core\OS\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\OS\Allocators\StbAllocator.cpp">
+      <Filter>Source\Index\Core\OS\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\OS\FileSystem.cpp">
+      <Filter>Source\Index\Core\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\OS\Input.cpp">
+      <Filter>Source\Index\Core\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\OS\Memory.cpp">
+      <Filter>Source\Index\Core\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\OS\MemoryManager.cpp">
+      <Filter>Source\Index\Core\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\OS\OS.cpp">
+      <Filter>Source\Index\Core\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\OS\Window.cpp">
+      <Filter>Source\Index\Core\OS</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\Reference.cpp">
+      <Filter>Source\Index\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\StringUtilities.cpp">
+      <Filter>Source\Index\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\UUID.cpp">
+      <Filter>Source\Index\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Core\VFS.cpp">
+      <Filter>Source\Index\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Embedded\EmbedAsset.cpp">
+      <Filter>Source\Index\Embedded</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\AnimatedSprite.cpp">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Animation\Animation.cpp">
+      <Filter>Source\Index\Graphics\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Animation\AnimationController.cpp">
+      <Filter>Source\Index\Graphics\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Animation\Skeleton.cpp">
+      <Filter>Source\Index\Graphics\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Camera\Camera.cpp">
+      <Filter>Source\Index\Graphics\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Camera\Camera2D.cpp">
+      <Filter>Source\Index\Graphics\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Camera\EditorCamera.cpp">
+      <Filter>Source\Index\Graphics\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Camera\FPSCamera.cpp">
+      <Filter>Source\Index\Graphics\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Camera\ThirdPersonCamera.cpp">
+      <Filter>Source\Index\Graphics\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Environment.cpp">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Font.cpp">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\GBuffer.cpp">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Light.cpp">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Material.cpp">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Mesh.cpp">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\MeshFactory.cpp">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Model.cpp">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\ModelLoader\FBXLoader.cpp">
+      <Filter>Source\Index\Graphics\ModelLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\ModelLoader\GLTFLoader.cpp">
+      <Filter>Source\Index\Graphics\ModelLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\ModelLoader\OBJLoader.cpp">
+      <Filter>Source\Index\Graphics\ModelLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\BufferLayout.cpp">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\CommandBuffer.cpp">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\DescriptorSet.cpp">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\Framebuffer.cpp">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\GraphicsContext.cpp">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\IMGUIRenderer.cpp">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\IndexBuffer.cpp">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\Pipeline.cpp">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\RenderDevice.cpp">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\RenderDoc.cpp">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\RenderPass.cpp">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\Renderer.cpp">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\Shader.cpp">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\SwapChain.cpp">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\Texture.cpp">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\UniformBuffer.cpp">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\RHI\VertexBuffer.cpp">
+      <Filter>Source\Index\Graphics\RHI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Renderable2D.cpp">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Renderers\DebugRenderer.cpp">
+      <Filter>Source\Index\Graphics\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Renderers\GridRenderer.cpp">
+      <Filter>Source\Index\Graphics\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Renderers\IRenderer.cpp">
+      <Filter>Source\Index\Graphics\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Renderers\RenderPasses.cpp">
+      <Filter>Source\Index\Graphics\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Sprite.cpp">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Graphics\Terrain.cpp">
+      <Filter>Source\Index\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\ImGui\ImGuiManager.cpp">
+      <Filter>Source\Index\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\ImGui\ImGuiUtilities.cpp">
+      <Filter>Source\Index\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\BoundingBox.cpp">
+      <Filter>Source\Index\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\BoundingSphere.cpp">
+      <Filter>Source\Index\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\Frustum.cpp">
+      <Filter>Source\Index\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\Maths.cpp">
+      <Filter>Source\Index\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\MathsUtilities.cpp">
+      <Filter>Source\Index\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\Plane.cpp">
+      <Filter>Source\Index\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\Random.cpp">
+      <Filter>Source\Index\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\Ray.cpp">
+      <Filter>Source\Index\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\Rect.cpp">
+      <Filter>Source\Index\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Maths\Transform.cpp">
+      <Filter>Source\Index\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\B2PhysicsEngine\B2DebugDraw.cpp">
+      <Filter>Source\Index\Physics\B2PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\B2PhysicsEngine\B2PhysicsEngine.cpp">
+      <Filter>Source\Index\Physics\B2PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\B2PhysicsEngine\RigidBody2D.cpp">
+      <Filter>Source\Index\Physics\B2PhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Broadphase\BruteForceBroadphase.cpp">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Broadphase</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Broadphase\OctreeBroadphase.cpp">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Broadphase</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Broadphase\SortAndSweepBroadphase.cpp">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Broadphase</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\CapsuleCollisionShape.cpp">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\CollisionShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\CuboidCollisionShape.cpp">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\CollisionShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\Hull.cpp">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\CollisionShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\HullCollisionShape.cpp">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\CollisionShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\PyramidCollisionShape.cpp">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\CollisionShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\CollisionShapes\SphereCollisionShape.cpp">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\CollisionShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Constraints\AxisConstraint.cpp">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Constraints</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Constraints\DistanceConstraint.cpp">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Constraints</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Constraints\SpringConstraint.cpp">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Constraints</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Constraints\WeldConstraint.cpp">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Constraints</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Integration.cpp">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\IndexPhysicsEngine.cpp">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Narrowphase\CollisionDetection.cpp">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Narrowphase</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\Narrowphase\Manifold.cpp">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine\Narrowphase</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Physics\IndexPhysicsEngine\RigidBody3D.cpp">
+      <Filter>Source\Index\Physics\IndexPhysicsEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\GLFW\GLFWWindow.cpp">
+      <Filter>Source\Index\Platform\GLFW</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenAL\ALManager.cpp">
+      <Filter>Source\Index\Platform\OpenAL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenAL\ALSound.cpp">
+      <Filter>Source\Index\Platform\OpenAL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenAL\ALSoundNode.cpp">
+      <Filter>Source\Index\Platform\OpenAL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLCommandBuffer.cpp">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLContext.cpp">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLDebug.cpp">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLDescriptorSet.cpp">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLFramebuffer.cpp">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLFunctions.cpp">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLIMGUIRenderer.cpp">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLIndexBuffer.cpp">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLPipeline.cpp">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLRenderDevice.cpp">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLRenderPass.cpp">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLRenderer.cpp">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLShader.cpp">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLSwapChain.cpp">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLTexture.cpp">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLUniformBuffer.cpp">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLUtilities.cpp">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\OpenGL\GLVertexBuffer.cpp">
+      <Filter>Source\Index\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VK.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKBuffer.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKCommandBuffer.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKCommandPool.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKContext.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKDescriptorSet.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKDevice.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKFence.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKFramebuffer.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKFunctions.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKIMGUIRenderer.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKIndexBuffer.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKPipeline.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKRenderDevice.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKRenderPass.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKRenderer.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKShader.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKSwapChain.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKTexture.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKUniformBuffer.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKUtilities.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Vulkan\VKVertexBuffer.cpp">
+      <Filter>Source\Index\Platform\Vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Windows\WindowsFileSystem.cpp">
+      <Filter>Source\Index\Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Windows\WindowsOS.cpp">
+      <Filter>Source\Index\Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Windows\WindowsPower.cpp">
+      <Filter>Source\Index\Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Windows\WindowsTimer.cpp">
+      <Filter>Source\Index\Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Windows\WindowsUtilities.cpp">
+      <Filter>Source\Index\Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Windows\WindowsVulkan.cpp">
+      <Filter>Source\Index\Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Source\Index\Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\Component\AIComponent.cpp">
+      <Filter>Source\Index\Scene\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\Component\ModelComponent.cpp">
+      <Filter>Source\Index\Scene\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\Component\RigidBody2DComponent.cpp">
+      <Filter>Source\Index\Scene\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\Component\RigidBody3DComponent.cpp">
+      <Filter>Source\Index\Scene\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\Component\SoundComponent.cpp">
+      <Filter>Source\Index\Scene\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\Component\TextureMatrixComponent.cpp">
+      <Filter>Source\Index\Scene\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\EntityFactory.cpp">
+      <Filter>Source\Index\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\EntityManager.cpp">
+      <Filter>Source\Index\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\Scene.cpp">
+      <Filter>Source\Index\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\SceneGraph.cpp">
+      <Filter>Source\Index\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scene\SceneManager.cpp">
+      <Filter>Source\Index\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scripting\Lua\ImGuiLua.cpp">
+      <Filter>Source\Index\Scripting\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scripting\Lua\LuaManager.cpp">
+      <Filter>Source\Index\Scripting\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scripting\Lua\LuaScriptComponent.cpp">
+      <Filter>Source\Index\Scripting\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scripting\Lua\MathsLua.cpp">
+      <Filter>Source\Index\Scripting\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Scripting\Lua\PhysicsLua.cpp">
+      <Filter>Source\Index\Scripting\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Utilities\AssetManager.cpp">
+      <Filter>Source\Index\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Utilities\ExternalBuild.cpp">
+      <Filter>Source\Index\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Utilities\IniFile.cpp">
+      <Filter>Source\Index\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Utilities\LoadImage.cpp">
+      <Filter>Source\Index\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Utilities\TimeStep.cpp">
+      <Filter>Source\Index\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Index\Utilities\Timer.cpp">
+      <Filter>Source\Index\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Precompiled.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

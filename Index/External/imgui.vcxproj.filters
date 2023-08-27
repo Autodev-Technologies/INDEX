@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{E7385F16-5318-DEB1-5C30-6988C88E4413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\implot">
+      <UniqueIdentifier>{0BD4490A-F7A1-3D10-E035-AE36CCA21975}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="imgui\Plugins\ImGuizmo.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\Plugins\ImTextEditor.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\Plugins\implot\implot.h">
+      <Filter>Plugins\implot</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\Plugins\implot\implot_internal.h">
+      <Filter>Plugins\implot</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\imstb_rectpack.h" />
+    <ClInclude Include="imgui\imstb_textedit.h" />
+    <ClInclude Include="imgui\imstb_truetype.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="imgui\Plugins\ImGuizmo.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\Plugins\ImTextEditor.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\Plugins\imcmd_command_palette.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\Plugins\imcmd_fuzzy_search.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\Plugins\implot\implot.cpp">
+      <Filter>Plugins\implot</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\Plugins\implot\implot_items.cpp">
+      <Filter>Plugins\implot</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_demo.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="imgui\imgui_tables.cpp" />
+    <ClCompile Include="imgui\imgui_widgets.cpp" />
+  </ItemGroup>
+</Project>
