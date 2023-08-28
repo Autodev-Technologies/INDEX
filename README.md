@@ -33,17 +33,9 @@ Screenshot of the UI of Index 1.0.4b1
 
 ## Getting the engine
 
-### Release Date:
-
-INDEX 1.x will be release on 27.08.2023
-
 ### Binary downloads
 
 Official binaries for the INDEX 1.x editor and the export templates can be found on Github.
-
-### Compiling from source
-
-See INDEV Offical docs on Github for compilation instructions for every supported platform.
 
 ### Credits to all libraries that were used:
 
