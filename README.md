@@ -1,4 +1,4 @@
-# Index 1.x
+# Index 1.0
 
 <p align="center">
   <a href="">
@@ -8,7 +8,7 @@
 
 ## 2D and 3D cross-platform game engine
 
-**[Index 1.x]() is a feature-packed, cross-platform
+**[Index 1.0]() is a feature-packed, cross-platform
 game engine to create 2D and 3D games from a unified interface.** It provides a
 comprehensive set of common tools, so that users can focus on making games
 without having to reinvent the wheel. Games can be exported with one click to a
