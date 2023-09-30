@@ -9,6 +9,6 @@
 <h3 align="center">INDEX 2 will be release on December 31 of 2023</h3>
 
 <h4 align="center">© 2022-2023 Indev Technologies ApS | © 2021-2023 Indev Corporation | © 2010-2023 Saúl Alejandro</h4>
-<h4 align="center">indev-inc.github.io/Indev/</h4>
+[INDEV website](indev-inc.github.io/Indev)
 <br/>
 </p>
