@@ -8,6 +8,7 @@
 <h3 align="center">INDEX 2 is under development for new things in they thanks for the Hazel Source Code</h3>
 <h2>Beta Channel</h2>
 <h4 align="justify">INDEX 2 will enter beta on October 13, 2023 and will close on December 17, 2023. Please note that this is still an unstable release, so the final product is not guaranteed to be perfect because it is planned. So be it in INDEX 2. LTS. The launch will be guaranteed to be very stable, but the date is not yet defined.</h3>
+<h4 align="justify">Also the new version of INDEV Website will also be release on October 14th of 2023 will the download page to download INDEX 2.0 Beta</h3>
 
 <h2>For now, what will you try to add?</h2>
 <p>INDEV Website System to INDEX Editor</p>
