@@ -1,11 +1,14 @@
 <p align="center">
   <a href="">
-    <img src="https://github.com/INDEV-Technologies/INDEX/assets/126918321/6ce46802-adac-4a3d-9c94-b97dba722723" width="400" alt="INDEX 2">
+    <img src="https://github.com/INDEV-Technologies/INDEX/assets/126918321/276a2988-b298-4cf4-a818-85e13da034d2" alt="INDEX 2">
   </a>
 </p>
 
-<h3 align="center">Welcome to INDEX 2 the new gen of INDEX Family</h3>
-<h3 align="center">INDEX 2 is under development for new things in they thanks for the Hazel Source Code</h3>
+Welcome to INDEX 2 the new gen of INDEX Family
+INDEX 2 is under development for new things in they thanks for the Hazel Source Code
+
+Announcement: tomorrow at 3:50 PST will be the release of the beta channel
+
 <h2>Beta Channel</h2>
 <h4 align="justify">INDEX 2 will enter beta on October 13, 2023 and will close on December 17, 2023. Please note that this is still an unstable release, so the final product is not guaranteed to be perfect because it is planned. So be it in INDEX 2. LTS. The launch will be guaranteed to be very stable, but the date is not yet defined.</h3>
 <h4 align="justify">Also the new version of INDEV Website will also be release on October 14th of 2023 will the download page to download INDEX 2.0 Beta</h3>
