@@ -7,7 +7,7 @@
 Welcome to INDEX 2 the new gen of INDEX Family
 INDEX 2 is under development for new things in they thanks for the Hazel Source Code
 
-Announcement: tomorrow at 3:50 PST will be the release of the beta channel
+Announcement: The Beta channel is now open.
 
 <h2>Beta Channel</h2>
 <h4 align="justify">INDEX 2 will enter beta on October 13, 2023 and will close on December 17, 2023. Please note that this is still an unstable release, so the final product is not guaranteed to be perfect because it is planned. So be it in INDEX 2. LTS. The launch will be guaranteed to be very stable, but the date is not yet defined.</h3>
