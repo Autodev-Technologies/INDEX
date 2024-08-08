@@ -15,7 +15,7 @@ INDEX 3 Can run Halo 2 - Cairo Station at 13 FPS per second, this map will be re
 
 [Halo 2] © Microsoft Corporation. [Halo 2 - Cairo Station for INDEX 3] was created under Microsoft's "Game Content Usage Rules" using assets from [Halo 2], and it is not endorsed by or affiliated with Microsoft.  
 
-<h4>Remember that INDEX 3 will be release on July 29th, 2024</h3>
+<h4>Remember that INDEX 3 will be release on August 17th, 2024</h3>
 <h3>© 2022-2024 Indev Technologies | © 2021-2024 Indev Inc | © 2010-2024 Saúl Alejandro</h4>
 <br/>
 </p>
